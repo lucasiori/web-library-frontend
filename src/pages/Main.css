@@ -1,0 +1,222 @@
+body {
+    padding-bottom: 30px;
+}
+
+section#book-list {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    justify-content: center;  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+section#book-list div article {
+    min-width: 500px;
+    border: 1px solid #CCC;
+    border-left-width: 20px;
+    border-left-style: solid;
+    padding: 5px;
+    margin: 5px;
+    height: 100%;
+    background: #FFF;
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 1px 5px 15px -4px rgba(153,151,153,1);
+    -webkit-box-shadow: 1px 5px 15px -4px rgba(153,151,153,1);
+}
+
+img#book-image {
+    max-width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div#book-info {
+    width: 70%;
+    padding-left: 10px;
+}
+
+div#book-title {
+    margin-top: -5px;
+    margin-right: -5px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    text-align: end;
+    padding: 2px 5px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #CCCCCC);
+}
+
+div#book-title label {
+    font-weight: 700;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#evaluation {
+    width: 60%;
+    justify-content: space-between;
+}
+
+div#evaluation div {
+    text-align: end;
+}
+
+div#evaluation div label {
+    text-align: end;
+    font-weight: 700;
+    font-size: 12px !important;
+    color: #818181 !important;
+}
+
+div#evaluation_average  {
+    width: 40%;
+    justify-content: space-around;
+}
+
+div#evaluation_average div, div#evaluation_average a {
+    margin: 0 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+div#evaluation_average div#average {
+    height: 110px;
+    margin: 0 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div#evaluation_average button#evaluate {
+    padding: 4px 2px;
+    border: 0;
+    background: #2a98ff;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+}
+
+div#evaluation_average button#edit {
+    margin-top: 5px;
+    padding: 4px 2px;
+    border: 0;
+    background: #ffdb2ac7;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+}
+
+div#evaluation_average > div#average label {
+   font-size: 60px;
+   font-weight: 700;
+}
+
+div#neutral-evaluation, div#negative-evaluation, div#total-evaluation {
+    margin-top: 5px;
+}
+
+section#book-list article:hover {
+    transform: scale(1.1);
+}
+
+div#add-book {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+div#add-book a {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+}
+
+div#add-book img {
+    z-index: 1999;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #27ce7a;
+    border: 0;
+    box-shadow: 1px 5px 15px -4px rgba(153,151,153,1);
+    -webkit-box-shadow: 1px 5px 15px -4px rgba(153,151,153,1);
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    -webkit-animation: slideIn 2000ms ease;
+    animation: slideIn 2000ms ease;
+    transition: opacity 2000ms ease-in;
+}
+
+.fade-in-opacity {
+    -webkit-animation: fadeIn 7s ease;
+    animation: fadeIn 7s ease;
+}
+
+div#validation-message {
+    width: 100%;
+    max-width: 580px;
+    min-height: 50px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+  }
+  
+div#validation-message label {
+    font-weight: 700;
+}
+
+.without-rating {
+    border-left-color: #CCCCCC !important;
+}
+
+.positive-rating {
+    border-left-color: #27ce7a !important; 
+}
+
+.neutral-rating {
+    border-left-color: #ffdb2ac7 !important;
+}
+
+.negative-rating {
+    border-left-color: #ff1414c7 !important;
+}
+
+@keyframes slideIn {
+    0% {
+       transform: translate(0, 300px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+}
