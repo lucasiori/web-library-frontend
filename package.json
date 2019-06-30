@@ -1,7 +1,10 @@
 {
   "name": "cls",
   "version": "0.1.0",
-  "private": null,
+  "engines": {
+    "node": "12.4.0"
+  },
+  "private": false,
   "dependencies": {
     "axios": "^0.19.0",
     "percent": "^2.0.0",
