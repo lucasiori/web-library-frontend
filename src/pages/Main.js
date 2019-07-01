@@ -49,7 +49,7 @@ class Main extends Component {
                             classNames="fade">
                             <article className={this.handleCheckBookRating(book.evaluation_number, book.evaluation_average)}>
                                 <div className="flex-direction-row">
-                                    <div>
+                                    <div style={{ display: "flex" }}>
                                         <img id="book-image" alt="Imagem do Livro"
                                             src={`${process.env.REACT_APP_API_URL}/files/${book.image}`}></img>
                                     </div>

@@ -35,6 +35,12 @@ form#new-book button#btnImage {
   width: 45%;
 }
 
+form#new-book label {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 div#validation-message, div#message-confirm-delete {
   width: 100%;
   max-width: 580px;
