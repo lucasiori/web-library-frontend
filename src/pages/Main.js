@@ -16,6 +16,8 @@ class Main extends Component {
     };
 
     async componentDidMount() {
+        document.title = "Página Principal";
+
         const response = await api.get('/book');
 
         await this.setState({ books: response.data });

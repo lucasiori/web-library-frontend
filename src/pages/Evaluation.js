@@ -20,6 +20,8 @@ class Evaluation extends Component {
     };
 
     async componentDidMount() {
+        document.title = "Avaliações";
+
         await this.setState({ id_book: queryString.parse(this.props.location.search).id_book });
 
         const response = await api.get(`/evaluation/${this.state.id_book}`);

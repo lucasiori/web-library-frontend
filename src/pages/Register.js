@@ -18,6 +18,8 @@ class Register extends Component {
     };
 
     async componentDidMount() {
+        document.title = "Cadastro de Livros";
+
         if (queryString.parse(this.props.location.search).id) {
             await this.setState({ id_book_edit: queryString.parse(this.props.location.search).id });
             
