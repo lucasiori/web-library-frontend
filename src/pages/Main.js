@@ -51,7 +51,7 @@ class Main extends Component {
                                 <div className="flex-direction-row">
                                     <div>
                                         <img id="book-image" alt="Imagem do Livro"
-                                            src={`http://localhost:3333/files/${book.image}`}></img>
+                                            src={`${process.env.REACT_APP_API_URL}/files/${book.image}`}></img>
                                     </div>
 
                                     <div id="book-info" className="flex-display-column">
