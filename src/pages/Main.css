@@ -68,7 +68,7 @@ div#evaluation div {
 div#evaluation div label {
     text-align: end;
     font-weight: 700;
-    font-size: 12px !important;
+    font-size: 11px !important;
     color: #818181 !important;
 }
 
@@ -155,22 +155,6 @@ div#add-book img {
     -webkit-box-shadow: 1px 5px 15px -4px rgba(153,151,153,1);
 }
 
-.fade-enter {
-    opacity: 0.01;
-}
-
-.fade-enter-active {
-    opacity: 1;
-    -webkit-animation: slideIn 2000ms ease;
-    animation: slideIn 2000ms ease;
-    transition: opacity 2000ms ease-in;
-}
-
-.fade-in-opacity {
-    -webkit-animation: fadeIn 7s ease;
-    animation: fadeIn 7s ease;
-}
-
 div#validation-message {
     width: 100%;
     max-width: 580px;
@@ -187,6 +171,22 @@ div#validation-message {
   
 div#validation-message label {
     font-weight: 700;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    -webkit-animation: slideIn 2000ms ease;
+    animation: slideIn 2000ms ease;
+    transition: opacity 2000ms ease-in;
+}
+
+.fade-in-opacity {
+    -webkit-animation: fadeIn 7s ease;
+    animation: fadeIn 7s ease;
 }
 
 .without-rating {
